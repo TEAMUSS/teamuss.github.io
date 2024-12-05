@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Page Technologies</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 5px;
+            font-size: 2.5em;
+            transition: color 0.3s;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 0;
+            font-size: 1.2em;
+            font-weight: normal;
+            transition: color 0.3s;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Increased min size for larger boxes */
+            gap: 20px;
+        }
+
+        .grid-item {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px; /* Increased padding for better spacing */
+            text-align: center;
+            transition: box-shadow 0.3s;
+            overflow: hidden;
+        }
+
+        .grid-item:hover {
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .grid-item h2 {
+            color: #333;
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            transition: transform 0.3s;
+            display: block;
+            margin: 0 auto;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+
+        .button-link {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #ffffff;
+            text-decoration: none;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .button-link:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+        }
+
+        .more-info {
+            display: none;
+            margin-top: 10px;
+            font-size: 0.9em;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>TEAM U.S.S</h1>
+        <h2>TEAM - Undefined Systems Solutions</h2>
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="OP.jpg" alt="Online Player Video">
+                <h2>Online Player Video</h2>
+                <a href="https://example.com/online-player" class="button-link" target="_blank">Click to see more</a>
+                <div class="more-info" id="online-player">More info about Online Player Video...</div>
+            </div>
+            <div class="grid-item">
+                <img src="SG.jpg" alt="Snake Game">
+                <h2>Snake Game</h2>
+                <a href="https://example.com/snake-game" class="button-link" target="_blank">Click to see more</a>
+                <div class="more-info" id="snake-game">More info about Snake Game...</div>
+            </div>
+            <div class="grid-item">
+                <img src="TTT.jpg" alt="Tic Tac Toe">
+                <h2>Tic Tac Toe</h2>
+                <a href="https://example.com/tic-tac-toe" class="button-link" target="_blank">Click to see more</a>
+                <div class="more-info" id="tic-tac-toe">More info about Tic Tac Toe...</div>
+            </div>
+            <div class="grid-item">
+                <img src="HC.jpg" alt="Holidays Countdown">
+                <h2>Holidays Countdown</h2>
+                <a href="https://example.com/holidays-countdown" class="button-link" target="_blank">Click to see more</a>
+                <div class="more-info" id="holidays-countdown">More info about Holidays Countdown...</div>
+            </div>
+            <div class="grid-item">
+                <img src="TMC.jpg" alt="TV & Movie Countdown">
+                <h2>TV & Movie Countdown</h2>
+                <a href="https://example.com/tv-movie-countdown" class="button-link" target="_blank">Click to see more</a>
+                <div class="more-info" id="tv-movie-countdown">More info about TV & Movie Countdown...</div>
+            </div>
+            <div class="grid-item">
+                <img src="GC.jpg" alt="Game Countdown">
+                <h2>Game Countdown</h2>
+                <a href="https://example.com/game-countdown" class="button-link" target="_blank">Click to see more</a>
+                <div class="more-info" id="game-countdown">More info about Game Countdown...</div>
+            </div>
+            <div class="grid-item">
+                <img src="HG.jpg" alt="Hamster Jump Game - Demo">
+                <h2>Hamster Jump Game - Demo</h2>
+                <a href="https://example.com/hamster-jump" class="button-link" target="_blank">Click to see more</a>
+                <div class="more-info" id="hamster-jump">More info about Hamster Jump Game...</div>
+            </div>
+            <div class="grid-item">
+                <img src="PG.jpg" alt="Puzzle Guess Game">
+                <h2>Puzzle Guess Game</h2>
+                <a href="https://example.com/puzzle-guess" class="button-link" target="_blank">Click to see more</a>
+                <div class="more-info" id="puzzle-guess">More info about Puzzle Guess Game...</div>
+            </div>
+            <div class="grid-item">
+                <img src="MC.jpg" alt="Morse Code Converter">
+                <h2>Morse Code Converter</h2>
+                <a href="https://example.com/morse-code" class="button-link" target="_blank">Click to see more</a>
+                <div class="more-info" id="morse-code">More info about Morse Code Converter...</div>
+            </div>
+            <div class="grid-item">
+                <img src="SS9.jpg" alt="Sudoku Solver 9x9">
+                <h2>Sudoku Solver 9x9</h2>
+                <a href="https://example.com/sudoku-solver" class="button-link" target="_blank">Click to see more</a>
+                <div class="more-info" id="sudoku-solver">More info about Sudoku Solver 9x9...</div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function showMore(id) {
+            const moreInfo = document.getElementById(id);
+            moreInfo.style.display = moreInfo.style.display === "none" || moreInfo.style.display === "" ? "block" : "none";
+        }
+    </script>
+</body>
+</html>
